@@ -1,8 +1,8 @@
 <?php
 session_start();
 if (isset($_GET['add_to_cart'])) {
+    $_SESSION['panier'][] = $_GET['add_to_cart'];
 }
-
 ?>
 <?php require 'inc/data/products.php'; ?>
 <?php require 'inc/head.php'; ?>
